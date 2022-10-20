@@ -45,7 +45,7 @@
 
   /* reste des variables */
 
-  --backgroundColor: var(--grey-50);
+  --backgroundColor: var(--grey-100);
   --textColor: var(--grey-900);
   --border-radius: 0.25rem;
   --letter-spacing: 1px;
@@ -262,4 +262,42 @@ ul {
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
+}
+
+/* nav */
+
+nav {
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  background: var(--white);
+  box-shadow: var(--shadow-1);
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.nav-links {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  letter-spacing: var(--letter-spacing);
+  color: var(--grey-900);
+  transition: var(--transition);
+}
+
+.nav-link a:hover {
+  color: var(--primary-500);
 }
